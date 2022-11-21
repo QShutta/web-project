@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
 
 </head>
 <body>
@@ -22,22 +23,18 @@
             <div class="input-wrapper">
                 <p>Email address</p>
             </div>
-            <input type="text" class="input" placeholder="youremail@gmail.com">
+            <input type="text" class="input" placeholder="youremail@gmail.com" id="Email">
             <div class="input-wrapper">
                 <p>University ID</p>
             </div>
-            <input type="password" class="input" placeholder="your ID">
+            <input type="password" class="input" placeholder="your ID" id="Password">
 
-            <button class="button">Login</button>
+            <button class="button" ><a href="test.html" class="Log" onclick="validate()">Login</a></button>
             <div class="creat-account">
-                <a href="">Creat new account</a>
+                <a href="Account.html">Creat new account</a>
             </div>
 
-
-
         </form>
-
-
 
     </div>
 </body>
