@@ -80,7 +80,7 @@ label{
     #dot-2:checked ~ .categoty label .tow,
     #dot-3:checked ~ .categoty label .three{
     border-color: #d9d9d9;
-    background: cornflowerblue;
+    background: #093545;
     }
     .button{
         width: 100%;
