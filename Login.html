@@ -10,7 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="validate.js"></script>
+    <script >
+    var users = [
+        {
+            username : "ahmed", 
+            password : "123",
+
+        } ,
+        {
+            username : "qasim", 
+            password : "321",
+
+        } ,
+        {
+            username : "osman", 
+            password : "456",
+
+        } 
+    ]
+function validate(){
+    var username = document.getElementById("Email").value
+    var password = document.getElementById("password").value
+    for (i = 0 ; i<users.length; i++){
+        if(username == users[i].username && users[i].password){
+            console.log(username + "is logged");
+            return
+        }
+    }
+    console.log("inccorect username")
+}
+
+    </script>
 
 </head>
 <body>
@@ -23,13 +53,13 @@
             <div class="input-wrapper">
                 <p>Email address</p>
             </div>
-            <input type="text" class="input" placeholder="youremail@gmail.com" id="Email">
+            <input type="email" class="input" placeholder="youremail@gmail.com" id="Email">
             <div class="input-wrapper">
                 <p>University ID</p>
             </div>
             <input type="password" class="input" placeholder="your ID" id="Password">
 
-            <button class="button" ><a href="test.html" class="Log" onclick="validate()">Login</a></button>
+            <button class="button" onclick=" validate()" ><a href="main.html" class="Log">Login</a></button>
             <div class="creat-account">
                 <a href="Account.html">Creat new account</a>
             </div>
