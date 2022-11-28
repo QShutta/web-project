@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script >
+    var users = [
+        {
+            username : "ahmed", 
+            password : "123",
+
+        } ,
+        {
+            username : "qasim", 
+            password : "321",
+
+        } ,
+        {
+            username : "osman@gmail.com", 
+            password : "456",
+
+        } 
+    ]
+function validate(){
+    var username = document.getElementById("Email").value
+    var password = document.getElementById("password").value
+    for (i = 0 ; i<users.length; i++){
+        if(username == users[i].username && users[i].password){
+            console.log(username + "is logged");
+            return
+        }
+    }
+    console.log("inccorect username")
+}
+
+    </script>
+
+</head>
+<body>
+    <div class="form-raper">
+        <form action="" class="form">
+            <div class="logo">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h2>Login to your account</h2>
+            </div>
+            <div class="input-wrapper">
+                <p>Email address</p>
+            </div>
+            <input type="email" class="input" placeholder="youremail@gmail.com" id="Email" required>
+            <div class="input-wrapper">
+                <p>University ID</p>
+            </div>
+            <input type="password" class="input" placeholder="your ID" id="Password" required>
+
+            <button class="button" onclick=" validate()" ><a href="main pag.html" class="Log">Login</a></button>
+            <div class="creat-account">
+                <a href="Account.html">Creat new account</a>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

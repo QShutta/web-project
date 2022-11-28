@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+
+background-position: center;
+background-image: url(bg3.jpg)  ;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+    font-family:'DM Sans';
+
+
+
+	
+
+ 
+
+
+
+}
+nav{
+
+	
+	background:rgb(0,200,0);
+	text-align: center;
+	
+	
+	
+
+
+}
+nav ul {
+	display:inline-flex;
+	list-style: none;
+	color: fff;
+
+	
+	}
+	nav ul li
+	{
+		width:200px;
+		
+		padding: 15px;
+		background-color: rgb(100, 200, 0);
+		border-style: none;
+		font-size:6px ;
+}
+nav ul li a {
+	 font-family:'DM Sans';
+    font-style: normal;
+	text-decoration: none;
+	color: #fff;
+
+
+}
+.icon{
+	width: 30px;
+	
+
+}
